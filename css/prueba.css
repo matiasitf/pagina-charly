@@ -1,0 +1,961 @@
+@charset "UTF-8";
+body {
+  background: #313d52; }
+  body h2 {
+    text-align: center;
+    color: #318fb5; }
+  body h3 {
+    text-align: center;
+    color: #318fb5; }
+  body p {
+    color: #00b7c2;
+    font-size: 1rem;
+    text-align: justify center;
+    margin-left: auto;
+    margin-right: auto; }
+  body .portada {
+    margin-top: 25px; }
+  body .fotoIndex {
+    border-radius: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: 600px;
+    margin-top: 20px; }
+
+.titulo {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-decoration: inherit;
+  font-size: 50px;
+  color: #01a9b4; }
+
+.navegador {
+  padding-left: 160px;
+  width: 1000px;
+  margin: 30px auto 10px;
+  background-color: #ffff; }
+
+.navegador ul {
+  list-style: none; }
+
+.menu > li {
+  position: relative;
+  margin-left: -15px;
+  display: inline-block; }
+
+.menu > li > a {
+  display: block;
+  padding: 10px 22px;
+  color: #01a9b4;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem; }
+
+.menu > li a:hover {
+  color: #726a95;
+  transition: all 0.3s; }
+
+.submenu {
+  position: absolute;
+  background-color: #ffff;
+  width: 120%;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1s; }
+  .submenu li a {
+    display: block;
+    padding: 15px;
+    width: 100%;
+    color: #01a9b4;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none; }
+
+.menu li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+  z-index: 2; }
+
+.videoInsertado iframe {
+  display: block;
+  margin: 0 auto; }
+
+.foot {
+  padding-top: 30px;
+  height: 80px;
+  border-top: 3px solid black;
+  text-align: center;
+  text-decoration: none;
+  background: radial-gradient(circle, #020024 0%, #073495 0%, #090979 0%, #313d52 0%, #274499 0%, #275f9c 49%, #1e334e 100%); }
+
+.collapseIndex {
+  display: block;
+  margin: 50px 35%; }
+
+/**************BIOGRAFIA****************/
+.fotoBio {
+  display: none;
+  width: 600px;
+  height: 400px;
+  float: right; }
+
+.porSuiGieco {
+  padding-bottom: 70px; }
+
+/*********** Discografía *********************/
+.discos {
+  margin-top: 50px;
+  /*********** Sui Generis *********************/
+  /*********** PorSuiGieco *********************/
+  /*********** Maquina de hacer pajaros *********************/
+  /*********** Seru Giran *********************/
+  /*********** Solista *********************/
+  /************ Pedro Aznar ****************/
+  /************ Mercedes Sosa ****************/
+  /************ Roberto Pettinato ****************/
+  /*******************************/
+  /************ hover discos**************/
+  /**************/
+  /**********************/ }
+  .discos .suiGenerisDisco {
+    flex-basis: 600px;
+    flex-grow: 2;
+    height: 750px;
+    background: #424874;
+    background: linear-gradient(90deg, #424874 11%, #313d52 47%, #424874 84%, #313d52 99%);
+    border: 3px solid black;
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: space-between;
+    align-items: center; }
+    .discos .suiGenerisDisco .tablaSuiGeneris {
+      margin-bottom: 50px; }
+  .discos .porSuiGiecoDisco {
+    flex-basis: 600px;
+    flex-grow: 2;
+    height: 750px;
+    background: #424874;
+    background: linear-gradient(90deg, #424874 11%, #313d52 47%, #424874 84%, #313d52 99%);
+    border: 3px solid black;
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: space-between;
+    align-items: center; }
+    .discos .porSuiGiecoDisco .tituloGieco {
+      margin-top: 3px; }
+    .discos .porSuiGiecoDisco .tablaGieco {
+      margin-bottom: 300px; }
+  .discos .maquinaDisco {
+    flex-basis: 600px;
+    flex-grow: 2;
+    height: 750px;
+    background: #424874;
+    background: linear-gradient(90deg, #424874 11%, #313d52 47%, #424874 84%, #313d52 99%);
+    border: 3px solid black;
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: space-between;
+    align-items: center; }
+    .discos .maquinaDisco .maquinaTitulo {
+      margin-top: 3px; }
+    .discos .maquinaDisco .maquinaTabla {
+      margin-bottom: 200px; }
+  .discos .seruDisco {
+    flex-basis: 600px;
+    flex-grow: 2;
+    height: 790px;
+    background: #424874;
+    background: linear-gradient(90deg, #424874 11%, #313d52 47%, #424874 84%, #313d52 99%);
+    border: 3px solid black;
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: space-between;
+    align-items: center; }
+    .discos .seruDisco .seruTabla {
+      margin-bottom: 50px; }
+  .discos .solistaDisco {
+    flex-basis: 600px;
+    flex-grow: 2;
+    height: 790px;
+    background: #424874;
+    background: linear-gradient(90deg, #424874 11%, #313d52 47%, #424874 84%, #313d52 99%);
+    border: 3px solid black;
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: space-between;
+    align-items: center; }
+    .discos .solistaDisco .solistaTabla {
+      display: flex;
+      flex-flow: wrap row;
+      margin-bottom: 30px; }
+  .discos .aznarDisco {
+    flex-basis: 600px;
+    flex-grow: 2;
+    height: 790px;
+    background: #424874;
+    background: linear-gradient(90deg, #424874 11%, #313d52 47%, #424874 84%, #313d52 99%);
+    border: 3px solid black;
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: space-between;
+    align-items: center; }
+    .discos .aznarDisco .aznarTabla {
+      margin-bottom: 250px; }
+  .discos .mercedesDisco {
+    flex-basis: 600px;
+    flex-grow: 2;
+    height: 700px;
+    background: #424874;
+    background: linear-gradient(90deg, #424874 11%, #313d52 47%, #424874 84%, #313d52 99%);
+    border: 3px solid black;
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: space-between;
+    align-items: center; }
+    .discos .mercedesDisco .mercedesTabla {
+      margin-bottom: 300px; }
+  .discos .pettinatoDisco {
+    flex-basis: 600px;
+    flex-grow: 2;
+    height: 700px;
+    background: #424874;
+    background: linear-gradient(90deg, #424874 11%, #313d52 47%, #424874 84%, #313d52 99%);
+    border: 3px solid black;
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: space-between;
+    align-items: center; }
+    .discos .pettinatoDisco .pettinatoTabla {
+      margin-bottom: 230px; }
+  .discos td {
+    border: 1px solid;
+    text-align: center;
+    color: black;
+    padding: 10px;
+    font-size: 0.9rem;
+    background-color: #424874; }
+  .discos .cabeceraDiscos {
+    border-bottom: 4px solid black;
+    text-align: center; }
+  .discos .cancionesDiscos {
+    display: none; }
+    .discos .cancionesDiscos ol li {
+      margin: 0 0 0 25px;
+      text-align: left;
+      color: black;
+      letter-spacing: 1px;
+      font-size: 1rem; }
+    .discos .cancionesDiscos ol p {
+      text-decoration: underline;
+      margin: 2px 0 5px 16px;
+      text-align: left;
+      color: black;
+      letter-spacing: 1px; }
+  .discos .buttonDiscos:hover .cancionesDiscos {
+    background-color: #424874;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding: 10px;
+    z-index: 2; }
+  .discos .buttonDiscos {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #424874;
+    border: none;
+    color: black;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 8px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px; }
+    .discos .buttonDiscos span {
+      display: inline-block;
+      position: relative;
+      transition: 0.5s; }
+    .discos .buttonDiscos p {
+      color: black;
+      display: inline-block; }
+    .discos .buttonDiscos span:after {
+      content: '\25bc';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -10px;
+      transition: 0.2s; }
+  .discos .buttonDiscos:hover .buttonSpan p {
+    transition: 1s;
+    display: none; }
+  .discos .buttonDiscos:hover span {
+    padding-right: 20px; }
+  .discos .buttonDiscos:hover span:after {
+    opacity: 1;
+    right: 0; }
+  .discos .buttonDiscosSolista:hover .cancionesDiscos {
+    background-color: #424874;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding: 10px;
+    z-index: 2; }
+  .discos .buttonDiscosSolista {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #424874;
+    border: none;
+    color: black;
+    text-align: center;
+    font-size: 0.75rem;
+    transition: all 0.5s;
+    padding: 8px;
+    width: 100px;
+    cursor: pointer;
+    margin: 5px; }
+  .discos .buttonDiscosSolista span {
+    display: inline-block;
+    position: relative; }
+  .discos .buttonSpan p {
+    color: black;
+    display: inline-block; }
+  .discos .buttonDiscosSolista:hover .buttonSpan p {
+    transition: 1s;
+    display: none; }
+  .discos .buttonDiscosSolista span:after {
+    content: '\25bc';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -10px;
+    transition: 0.2s; }
+  .discos .buttonDiscosSolista:hover span {
+    padding-right: 20px; }
+  .discos .buttonDiscosSolista:hover span:after {
+    opacity: 1;
+    right: 0; }
+  .discos .sinfoniasButton {
+    margin-left: -12px; }
+
+/*********** NOVEDADES *************/
+.novedades {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center; }
+  .novedades .novedades--noticia {
+    background: #313d52;
+    background: linear-gradient(180deg, rgba(49, 61, 82, 0.910802) 34%, rgba(66, 72, 116, 0.860382) 80%);
+    margin-bottom: 40px;
+    width: 450px;
+    height: 400px;
+    border: 2px solid black;
+    padding: 5px 15px 15px; }
+    .novedades .novedades--noticia .novedades__noticia--titulo {
+      text-align: center;
+      font-size: 1.2rem;
+      color: #b080ffc9;
+      font-family: 'Fondamento', cursive; }
+
+/***** CONTACTO******/
+/*.formas {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Charly_Garc%C3%ADa_presenta_Clics_modernos.jpg/440px-Charly_Garc%C3%ADa_presenta_Clics_modernos.jpg);
+  width: 550px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  text-align: center;
+  color: #e4f9ff;
+  font-weight: bolder;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  border-radius: 5px;
+}
+
+.formas:hover {
+  background-image: none;
+  background-color: #313d52;
+  transition: 3s;
+}
+
+/* button */
+/*.btn-5 {
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  background: rgb(255,27,0);
+background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
+}
+.btn-5:hover {
+  color: #f0094a;
+  background: transparent;
+   box-shadow:none;
+}
+.btn-5:before,
+.btn-5:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #f0094a;
+  box-shadow:
+   -1px -1px 5px 0px #fff,
+   7px 7px 20px 0px #0003,
+   4px 4px 5px 0px #0002;
+  transition:400ms ease all;
+}
+.btn-5:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.btn-5:hover:before,
+.btn-5:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+*/
+.formulario {
+  border: 2px solid black;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 30px; }
+
+.formulario__mail {
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10px; }
+
+.formulario__mail__input {
+  margin-left: 15px; }
+
+.formulario__nombre__label {
+  margin-right: 10px;
+  margin-left: 25px;
+  width: 100px; }
+
+.formulario__nombre__input {
+  width: 300px;
+  margin-left: 25px; }
+
+.formulario__legend__sexo {
+  margin-left: 25px; }
+
+.formulario__radios {
+  margin-left: 125px; }
+
+.formulario__comentarios__label {
+  margin-left: 25px; }
+
+.formulario__comentarios__textarea {
+  width: 75%;
+  margin-left: 25px;
+  margin-right: auto; }
+
+.formulario_newsletercheck {
+  margin-left: 12px; }
+
+.formulario__button__enviar {
+  margin-left: 25px; }
+
+.animacion__imagen {
+  margin-top: 100px;
+  margin-left: 20vw;
+  margin-bottom: 100px;
+  position: relative;
+  animation-name: snm;
+  animation-duration: 4s;
+  animation-iteration-count: infinite; }
+
+@keyframes snm {
+  0% {
+    right: 0px;
+    top: 0px; }
+  20% {
+    right: 40px;
+    top: 0px; }
+  50% {
+    right: 40px;
+    top: 30px; }
+  70% {
+    right: 0px;
+    top: 30px; }
+  90% {
+    right: 0px;
+    top: 0px; } }
+
+/**************** Bio*****************************/
+.introBio {
+  margin: 0 10%; }
+
+.infancia {
+  margin: 0 10%; }
+
+.bioSuiGeneris {
+  margin: 0 10%; }
+
+.bioPorSuiGieco {
+  margin: 0 10%; }
+
+/*****************Galeria*************************/
+.galeria__carousel {
+  display: grid;
+  margin: 2% auto 20px;
+  width: 80vw;
+  height: 460px;
+  z-index: -1; }
+
+.galeria__fila1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: -120px;
+  margin-bottom: 10px; }
+
+.galeria__fila2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 10px;
+  margin-left: -120px; }
+
+.galeria__fila3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: -120px;
+  margin-bottom: 10px; }
+
+.galeria__fila4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: -120px;
+  margin-bottom: 10px; }
+  .galeria__fila4 .galeria__fila4__imagen1 {
+    border: 3px solid black;
+    position: relative;
+    transition: all 0.5s;
+    z-index: 1; }
+  .galeria__fila4 .galeria__fila4__imagen2 {
+    border: 3px solid black;
+    position: relative;
+    transition: all 0.5s;
+    z-index: 1; }
+
+.galeria__fila4__imagen1:hover {
+  transform: scale(1.1, 1.1);
+  z-index: 2; }
+
+.galeria__fila4__imagen2:hover {
+  transform: scale(1.1, 1.1);
+  z-index: 2; }
+
+.galeria__fila5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: -120px;
+  margin-bottom: 10px; }
+  .galeria__fila5 .galeria__fila5__imagen1 {
+    border: 3px solid black;
+    position: relative;
+    transition: all 0.5s;
+    z-index: 1; }
+  .galeria__fila5 .galeria__fila5__imagen2 {
+    border: 3px solid black;
+    position: relative;
+    transition: all 0.5s;
+    z-index: 1; }
+
+.galeria__fila5__imagen1:hover {
+  transform: scale(1.1, 1.1);
+  z-index: 2; }
+
+.galeria__fila5__imagen2:hover {
+  transform: scale(1.1, 1.1);
+  z-index: 2; }
+
+.galeria__fila1__imagen1 {
+  border: 3px solid black;
+  position: relative;
+  transition: all 0.5s;
+  z-index: 1; }
+
+.galeria__fila1__imagen1:hover {
+  transform: scale(1.1, 1.1);
+  z-index: 2; }
+
+.galeria__fila1__imagen2 {
+  border: 3px solid black;
+  position: relative;
+  transition: all 0.5s;
+  z-index: 1; }
+
+.galeria__fila1__imagen2:hover {
+  transform: scale(1.1, 1.1);
+  z-index: 2; }
+
+.galeria__fila2__imagen1 {
+  border: 3px solid black;
+  position: relative;
+  transition: all 0.5s;
+  z-index: 1; }
+
+.galeria__fila2__imagen1:hover {
+  transform: scale(1.1, 1.1);
+  z-index: 2; }
+
+.galeria__fila2__imagen2 {
+  border: 3px solid black;
+  position: relative;
+  margin-left: -10px;
+  transition: all 0.5s;
+  z-index: 1; }
+
+.galeria__fila2__imagen2:hover {
+  transform: scale(1.1, 1.1);
+  margin-left: -55px;
+  z-index: 2; }
+
+.galeria__fila3__imagen1 {
+  border: 3px solid black;
+  position: relative;
+  transition: all 0.5s;
+  z-index: 1; }
+
+.galeria__fila3__imagen1:hover {
+  transform: scale(1.1, 1.1);
+  z-index: 2; }
+
+.galeria__fila3__imagen2 {
+  margin-top: 10px;
+  margin-left: -15px;
+  border: 3px solid black;
+  position: relative;
+  transition: all 0.5s;
+  z-index: 1; }
+
+.galeria__fila3__imagen2:hover {
+  transform: scale(1.1, 1.1);
+  z-index: 2; }
+
+.galeria__fila3__imagen3 {
+  width: 600px;
+  height: 400px;
+  border: 3px solid black;
+  position: relative;
+  transition: all 0.5s;
+  z-index: 1;
+  margin-top: 80px;
+  margin-left: -30px; }
+
+.galeria__fila3__imagen3:hover {
+  transform: scale(1.1, 1.1);
+  margin-left: -55px;
+  z-index: 2; }
+
+/**********MOBILE FIRST************/
+@media only screen and (max-width: 768px) {
+  .navegador {
+    display: flex;
+    width: 65vh; }
+  .menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+  .submenu {
+    position: absolute;
+    background-color: #ffff;
+    width: 120%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s; }
+  .fotoIndex {
+    border-radius: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 300px;
+    margin-top: 20px; }
+  .submenu li a {
+    display: block;
+    padding: 15px;
+    width: 100%;
+    color: #01a9b4;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none; }
+  .menu li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+    z-index: 5;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black; }
+  .indexInfo {
+    margin: 80px 10% 50px;
+    display: grid;
+    grid-template-areas: "sobreCharly" "distinciones" "generos";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr; } }
+
+@media only screen and (max-width: 1024px) {
+  .indexInfo {
+    margin: 80px 10% 50px;
+    display: grid;
+    grid-template-areas: "sobreCharly" "distinciones" "generos";
+    grid-template-columns: 1fr;
+    grid-template-rows: 180px 180px 180px; } }
+
+@media only screen and (min-width: 1024px) {
+  .formulario {
+    border: 2px solid black;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 30px; }
+  .formulario__mail {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 600px; }
+  .formulario__mail__input {
+    margin-left: 30px; }
+  .formulario__nombre {
+    display: flex;
+    flex-direction: row; }
+  .formulario__nombre__label {
+    margin-right: 10px;
+    margin-left: 25px;
+    width: 100px; }
+  .formulario__nombre__input {
+    width: 470px;
+    margin-left: -30px; }
+  .radioSexo {
+    margin-left: 25px; }
+  .formulario__radios {
+    margin-left: 125px; }
+  .formulario__comentarios__label {
+    margin-left: 25px; }
+  .formulario__comentarios__textarea {
+    width: 75%;
+    margin-left: 100px;
+    margin-right: auto; }
+  .formulario__newsletercheck {
+    margin-left: 12px; }
+  .formulario__button__enviar {
+    margin-left: 25px; }
+  .galeria__carousel {
+    display: grid;
+    margin: 2% auto 30px 25%;
+    width: 80vw;
+    height: 460px;
+    z-index: -1; }
+  .galeria__fila1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: -40px;
+    margin-bottom: 10px; }
+  .galeria__fila2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 10px;
+    margin-left: -120px; }
+  .galeria__fila3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: -40px;
+    margin-bottom: 10px; }
+  .galeria__fila1__imagen1 {
+    border: 3px solid black;
+    position: relative;
+    transition: all 0.5s;
+    z-index: 1; }
+  .galeria__fila1__imagen1:hover {
+    transform: scale(1.1, 1.1);
+    margin-right: -20px;
+    z-index: 2; }
+  .galeria__fila1__imagen2 {
+    border: 3px solid black;
+    margin-left: 30px;
+    transition: all 0.5s;
+    position: absolute;
+    z-index: 1; }
+  .galeria__fila1__imagen2:hover {
+    transform: scale(1.1, 1.1);
+    margin-left: 10px;
+    z-index: 2; }
+  .galeria__fila2__imagen1 {
+    border: 3px solid black;
+    position: relative;
+    margin-left: 200px;
+    transition: all 0.5s;
+    z-index: 1; }
+  .galeria__fila2__imagen1:hover {
+    transform: scale(1.1, 1.1);
+    z-index: 2; }
+  .galeria__fila2__imagen2 {
+    border: 3px solid black;
+    margin-left: 600px;
+    margin-top: 10px;
+    position: relative;
+    transition: all 0.5s;
+    z-index: 1; }
+  .galeria__fila2__imagen2:hover {
+    transform: scale(1.1, 1.1);
+    margin-left: 580px;
+    z-index: 2; }
+  .galeria__fila3__imagen1 {
+    border: 3px solid black;
+    position: relative;
+    transition: all 0.5s;
+    z-index: 1; }
+  .galeria__fila3__imagen1:hover {
+    transform: scale(1.1, 1.1);
+    margin-left: 15px;
+    z-index: 2; }
+  .galeria__fila3__imagen2 {
+    margin-top: 10px;
+    border: 3px solid black;
+    position: relative;
+    transition: all 0.5s;
+    z-index: 1; }
+  .galeria__fila3__imagen2:hover {
+    transform: scale(1.1, 1.1);
+    margin-left: 10px;
+    z-index: 2; }
+  .galeria__fila3__imagen3 {
+    width: 600px;
+    height: 400px;
+    margin-left: -3px;
+    border: 3px solid black;
+    position: relative;
+    transition: all 0.5s;
+    z-index: 1;
+    margin-top: 80px; }
+  .galeria__fila3__imagen3:hover {
+    transform: scale(1.1, 1.1);
+    z-index: 2; } }
+
+@media only screen and (min-width: 1440px) {
+  .indexInfo {
+    margin: 80px 10% 50px;
+    display: grid;
+    grid-template-areas: "sobreCharly distinciones generos";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px; }
+  .formulario__comentarios__textarea {
+    width: 600px; }
+  .galeria__carousel {
+    display: grid;
+    margin: 2% auto 20px;
+    width: 70vw;
+    height: 460px;
+    z-index: -1; }
+  .galeria__fila1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: -120px;
+    margin-bottom: 10px; }
+  .galeria__fila2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 10px;
+    margin-left: -320px; }
+  .galeria__fila3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: -120px;
+    margin-bottom: 10px; }
+  .galeria__fila1__imagen1 {
+    border: 3px solid black;
+    position: relative;
+    transition: all 0.5s;
+    z-index: 1; }
+  .galeria__fila1__imagen1:hover {
+    transform: scale(1.1, 1.1);
+    z-index: 2; }
+  .galeria__fila1__imagen2 {
+    border: 3px solid black;
+    position: relative;
+    transition: all 0.5s;
+    z-index: 1; }
+  .galeria__fila1__imagen2:hover {
+    transform: scale(1.1, 1.1);
+    z-index: 2; }
+  .galeria__fila2__imagen1 {
+    border: 3px solid black;
+    position: relative;
+    transition: all 0.5s;
+    z-index: 1; }
+  .galeria__fila2__imagen1:hover {
+    transform: scale(1.1, 1.1);
+    z-index: 2; }
+  .galeria__fila2__imagen2 {
+    border: 3px solid black;
+    margin-left: -5px;
+    position: relative;
+    transition: all 0.5s;
+    z-index: 1; }
+  .galeria__fila2__imagen2:hover {
+    transform: scale(1.1, 1.1);
+    margin-left: -10px;
+    z-index: 2; }
+  .galeria__fila3__imagen1 {
+    border: 3px solid black;
+    position: relative;
+    transition: all 0.5s;
+    z-index: 1; }
+  .galeria__fila3__imagen1:hover {
+    transform: scale(1.1, 1.1);
+    z-index: 2; }
+  .galeria__fila3__imagen2 {
+    margin-top: 10px;
+    margin-left: -15px;
+    border: 3px solid black;
+    position: relative;
+    transition: all 0.5s;
+    z-index: 1; }
+  .galeria__fila3__imagen2:hover {
+    transform: scale(1.1, 1.1);
+    z-index: 2; }
+  .galeria__fila3__imagen3 {
+    width: 600px;
+    height: 400px;
+    border: 3px solid black;
+    position: relative;
+    transition: all 0.5s;
+    z-index: 1;
+    margin-top: 80px;
+    margin-left: -10px; }
+  .galeria__fila3__imagen3:hover {
+    transform: scale(1.1, 1.1);
+    margin-left: -15px;
+    z-index: 2; }
+  .galeria__fila5__imagen1:hover {
+    transform: scale(1.1, 1.1);
+    z-index: 2; }
+  .galeria__fila5__imagen2:hover {
+    transform: scale(1.1, 1.1);
+    z-index: 2; } }
+
+@media only screen and (max-width: 550px) {
+  .indexInfo {
+    display: flex;
+    flex-direction: column; }
+  .formulario__nombre__input {
+    width: 235px;
+    margin-left: 40px; }
+  iframe {
+    width: 80vw; } }
+
+@media only screen and (max-width: 610px) {
+  .seruDisco {
+    height: 750px; } }
