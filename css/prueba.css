@@ -3,7 +3,7 @@ body {
   background: #313d52; }
   body h2 {
     text-align: center;
-    color: #318fb5; }
+    color: #1c588a; }
   body h3 {
     text-align: center;
     color: #318fb5; }
@@ -25,59 +25,118 @@ body {
     margin-top: 20px; }
 
 .titulo {
-  margin-left: auto;
-  margin-right: auto;
+  padding-top: 85px;
+  text-align: center;
+  font-size: 3.3rem;
   text-align: center;
   text-decoration: inherit;
-  font-size: 50px;
   color: #01a9b4; }
 
-.navegador {
-  padding-left: 160px;
-  width: 1000px;
-  margin: 30px auto 10px;
-  background-color: #ffff; }
+/***********Menu*************/
+.header{
+  background-color: #133b5c;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
 
-.navegador ul {
-  list-style: none; }
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #133b5c;
+}
 
-.menu > li {
-  position: relative;
-  margin-left: -15px;
-  display: inline-block; }
-
-.menu > li > a {
+.header ul a{
   display: block;
-  padding: 10px 22px;
-  color: #01a9b4;
+  padding: 10px;
+  border-right: 2px solid #aaa;
   text-decoration: none;
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.3rem; }
+  color: #00b7c2;
+}
 
-.menu > li a:hover {
-  color: #726a95;
-  transition: all 0.3s; }
+.header ul a:hover{
+  background-color: #464f75;
+}
 
-.submenu {
+.header .logo{
+  float: left;
+  display: block;
+  color: #00b7c2;
+  font-size: 2em;
+  padding: 10px 20px;
+}
+
+.header .menu{
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+.header .menu-icon{
+  float: right;
+  padding: 30px 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.header .menu-icon .nav-icon{
+  background: black;
+  display: block;
+  height: 2px;
+  width: 18px;
+  position: relative;
+  transition: background .2s ease-out;
+}
+
+.header .menu-icon .nav-icon:before{
+  background: black;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
   position: absolute;
-  background-color: #ffff;
-  width: 120%;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 1s; }
-  .submenu li a {
-    display: block;
-    padding: 15px;
-    width: 100%;
-    color: #01a9b4;
-    font-family: 'Poppins', sans-serif;
-    text-decoration: none; }
+  transition: all .2 ease-out;
+  top: 5px;
+}
 
-.menu li:hover .submenu {
-  visibility: visible;
-  opacity: 1;
-  z-index: 2; }
+.header .menu-icon .nav-icon:after{
+  background: black;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all .2 ease-out;
+  top: -5px;
+}
 
+.header .menu-btn{
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu{
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon{
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before{
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after{
+  transform: rotate(45deg);
+  top: 0;
+}
+
+
+/**********************************************/
 .videoInsertado iframe {
   display: block;
   margin: 0 auto; }
@@ -88,7 +147,7 @@ body {
   border-top: 3px solid black;
   text-align: center;
   text-decoration: none;
-  background: radial-gradient(circle, #020024 0%, #073495 0%, #090979 0%, #313d52 0%, #274499 0%, #275f9c 49%, #1e334e 100%); }
+}
 
 .collapseIndex {
   display: block;
@@ -107,24 +166,11 @@ body {
 /*********** Discografía *********************/
 .discos {
   margin-top: 50px;
-  /*********** Sui Generis *********************/
-  /*********** PorSuiGieco *********************/
-  /*********** Maquina de hacer pajaros *********************/
-  /*********** Seru Giran *********************/
-  /*********** Solista *********************/
-  /************ Pedro Aznar ****************/
-  /************ Mercedes Sosa ****************/
-  /************ Roberto Pettinato ****************/
-  /*******************************/
-  /************ hover discos**************/
-  /**************/
-  /**********************/ }
+   }
   .discos .suiGenerisDisco {
     flex-basis: 600px;
     flex-grow: 2;
     height: 750px;
-    background: #424874;
-    background: linear-gradient(90deg, #424874 11%, #313d52 47%, #424874 84%, #313d52 99%);
     border: 3px solid black;
     display: flex;
     flex-flow: wrap column;
@@ -136,8 +182,6 @@ body {
     flex-basis: 600px;
     flex-grow: 2;
     height: 750px;
-    background: #424874;
-    background: linear-gradient(90deg, #424874 11%, #313d52 47%, #424874 84%, #313d52 99%);
     border: 3px solid black;
     display: flex;
     flex-flow: wrap column;
@@ -151,8 +195,6 @@ body {
     flex-basis: 600px;
     flex-grow: 2;
     height: 750px;
-    background: #424874;
-    background: linear-gradient(90deg, #424874 11%, #313d52 47%, #424874 84%, #313d52 99%);
     border: 3px solid black;
     display: flex;
     flex-flow: wrap column;
@@ -166,8 +208,6 @@ body {
     flex-basis: 600px;
     flex-grow: 2;
     height: 790px;
-    background: #424874;
-    background: linear-gradient(90deg, #424874 11%, #313d52 47%, #424874 84%, #313d52 99%);
     border: 3px solid black;
     display: flex;
     flex-flow: wrap column;
@@ -179,8 +219,6 @@ body {
     flex-basis: 600px;
     flex-grow: 2;
     height: 790px;
-    background: #424874;
-    background: linear-gradient(90deg, #424874 11%, #313d52 47%, #424874 84%, #313d52 99%);
     border: 3px solid black;
     display: flex;
     flex-flow: wrap column;
@@ -194,8 +232,6 @@ body {
     flex-basis: 600px;
     flex-grow: 2;
     height: 790px;
-    background: #424874;
-    background: linear-gradient(90deg, #424874 11%, #313d52 47%, #424874 84%, #313d52 99%);
     border: 3px solid black;
     display: flex;
     flex-flow: wrap column;
@@ -207,8 +243,6 @@ body {
     flex-basis: 600px;
     flex-grow: 2;
     height: 700px;
-    background: #424874;
-    background: linear-gradient(90deg, #424874 11%, #313d52 47%, #424874 84%, #313d52 99%);
     border: 3px solid black;
     display: flex;
     flex-flow: wrap column;
@@ -220,8 +254,6 @@ body {
     flex-basis: 600px;
     flex-grow: 2;
     height: 700px;
-    background: #424874;
-    background: linear-gradient(90deg, #424874 11%, #313d52 47%, #424874 84%, #313d52 99%);
     border: 3px solid black;
     display: flex;
     flex-flow: wrap column;
@@ -350,8 +382,6 @@ body {
   justify-content: center;
   text-align: center; }
   .novedades .novedades--noticia {
-    background: #313d52;
-    background: linear-gradient(180deg, rgba(49, 61, 82, 0.910802) 34%, rgba(66, 72, 116, 0.860382) 80%);
     margin-bottom: 40px;
     width: 450px;
     height: 400px;
@@ -471,45 +501,26 @@ background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
 .formulario__button__enviar {
   margin-left: 25px; }
 
-.animacion__imagen {
-  margin-top: 100px;
-  margin-left: 20vw;
-  margin-bottom: 100px;
-  position: relative;
-  animation-name: snm;
-  animation-duration: 4s;
-  animation-iteration-count: infinite; }
-
-@keyframes snm {
-  0% {
-    right: 0px;
-    top: 0px; }
-  20% {
-    right: 40px;
-    top: 0px; }
-  50% {
-    right: 40px;
-    top: 30px; }
-  70% {
-    right: 0px;
-    top: 30px; }
-  90% {
-    right: 0px;
-    top: 0px; } }
-
 /**************** Bio*****************************/
 .introBio {
-  margin: 0 10%; }
+  margin: 3% 10%; }
 
 .infancia {
-  margin: 0 10%; }
+  margin: 3% 10%; }
 
 .bioSuiGeneris {
-  margin: 0 10%; }
+  margin: 3% 10%; }
 
 .bioPorSuiGieco {
-  margin: 0 10%; }
+  margin: 3% 10%; }
 
+.bioMaquina{
+  margin: 3% 10%;
+}
+
+.bioSeru{
+  margin: 3% 10%;
+}
 /*****************Galeria*************************/
 .galeria__carousel {
   display: grid;
@@ -664,6 +675,22 @@ background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
   z-index: 2; }
 
 /**********MOBILE FIRST************/
+@media only screen and (min-width: 768px) {
+  .header li{
+  float: left;
+  }
+  .header li a{
+  padding: 20px 30px;
+  }
+  .header .menu{
+    clear:none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon{
+    display: none;
+  }
+}
 @media only screen and (max-width: 768px) {
   .navegador {
     display: flex;
