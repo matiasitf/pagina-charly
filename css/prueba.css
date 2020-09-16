@@ -1,14 +1,14 @@
 @charset "UTF-8";
 body {
-  background: #313d52; }
+  background: #052947; }
   body h2 {
     text-align: center;
-    color: #1c588a; }
+    color: #148df5; }
   body h3 {
     text-align: center;
-    color: #318fb5; }
+    color: #148df5; }
   body p {
-    color: #00b7c2;
+    color: #fff;
     font-size: 1rem;
     text-align: justify center;
     margin-left: auto;
@@ -20,8 +20,8 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 600px;
-    height: 600px;
+    width: 200px;
+    height: 200px;
     margin-top: 20px; }
 
 .titulo {
@@ -30,14 +30,16 @@ body {
   font-size: 3.3rem;
   text-align: center;
   text-decoration: inherit;
-  color: #01a9b4; }
+  color: #6ca4d5; }
 
 /***********Menu*************/
 .header{
   background-color: #133b5c;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
   position: fixed;
+  border-bottom: 2px solid black;
   width: 100%;
+  text-decoration: none;
   z-index: 3;
 }
 
@@ -52,7 +54,8 @@ body {
 .header ul a{
   display: block;
   padding: 10px;
-  border-right: 2px solid #aaa;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
   text-decoration: none;
   color: #00b7c2;
 }
@@ -118,7 +121,7 @@ body {
 }
 
 .header .menu-btn:checked ~ .menu{
-  max-height: 240px;
+  max-height: 270px;
 }
 
 .header .menu-btn:checked ~ .menu-icon .nav-icon{
@@ -135,23 +138,47 @@ body {
   top: 0;
 }
 
+/***************INDEX*******************************/
 
-/**********************************************/
-.videoInsertado iframe {
-  display: block;
-  margin: 0 auto; }
+.informacion{
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: grid;
+  grid-template-rows: 150px 280px 300px;
+}
 
-.foot {
+.informacion_item{
+  text-align: center;
+  padding: 10px;
+}
+
+
+.videoIndex {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.pie {
+  background: #133b5c;
   padding-top: 30px;
   height: 80px;
   border-top: 3px solid black;
   text-align: center;
   text-decoration: none;
 }
-
-.collapseIndex {
-  display: block;
-  margin: 50px 35%; }
 
 /**************BIOGRAFIA****************/
 .fotoBio {
@@ -164,214 +191,116 @@ body {
   padding-bottom: 70px; }
 
 /*********** Discografía *********************/
-.discos {
-  margin-top: 50px;
-   }
-  .discos .suiGenerisDisco {
-    flex-basis: 600px;
-    flex-grow: 2;
-    height: 750px;
-    border: 3px solid black;
-    display: flex;
-    flex-flow: wrap column;
-    justify-content: space-between;
-    align-items: center; }
-    .discos .suiGenerisDisco .tablaSuiGeneris {
-      margin-bottom: 50px; }
-  .discos .porSuiGiecoDisco {
-    flex-basis: 600px;
-    flex-grow: 2;
-    height: 750px;
-    border: 3px solid black;
-    display: flex;
-    flex-flow: wrap column;
-    justify-content: space-between;
-    align-items: center; }
-    .discos .porSuiGiecoDisco .tituloGieco {
-      margin-top: 3px; }
-    .discos .porSuiGiecoDisco .tablaGieco {
-      margin-bottom: 300px; }
-  .discos .maquinaDisco {
-    flex-basis: 600px;
-    flex-grow: 2;
-    height: 750px;
-    border: 3px solid black;
-    display: flex;
-    flex-flow: wrap column;
-    justify-content: space-between;
-    align-items: center; }
-    .discos .maquinaDisco .maquinaTitulo {
-      margin-top: 3px; }
-    .discos .maquinaDisco .maquinaTabla {
-      margin-bottom: 200px; }
-  .discos .seruDisco {
-    flex-basis: 600px;
-    flex-grow: 2;
-    height: 790px;
-    border: 3px solid black;
-    display: flex;
-    flex-flow: wrap column;
-    justify-content: space-between;
-    align-items: center; }
-    .discos .seruDisco .seruTabla {
-      margin-bottom: 50px; }
-  .discos .solistaDisco {
-    flex-basis: 600px;
-    flex-grow: 2;
-    height: 790px;
-    border: 3px solid black;
-    display: flex;
-    flex-flow: wrap column;
-    justify-content: space-between;
-    align-items: center; }
-    .discos .solistaDisco .solistaTabla {
-      display: flex;
-      flex-flow: wrap row;
-      margin-bottom: 30px; }
-  .discos .aznarDisco {
-    flex-basis: 600px;
-    flex-grow: 2;
-    height: 790px;
-    border: 3px solid black;
-    display: flex;
-    flex-flow: wrap column;
-    justify-content: space-between;
-    align-items: center; }
-    .discos .aznarDisco .aznarTabla {
-      margin-bottom: 250px; }
-  .discos .mercedesDisco {
-    flex-basis: 600px;
-    flex-grow: 2;
-    height: 700px;
-    border: 3px solid black;
-    display: flex;
-    flex-flow: wrap column;
-    justify-content: space-between;
-    align-items: center; }
-    .discos .mercedesDisco .mercedesTabla {
-      margin-bottom: 300px; }
-  .discos .pettinatoDisco {
-    flex-basis: 600px;
-    flex-grow: 2;
-    height: 700px;
-    border: 3px solid black;
-    display: flex;
-    flex-flow: wrap column;
-    justify-content: space-between;
-    align-items: center; }
-    .discos .pettinatoDisco .pettinatoTabla {
-      margin-bottom: 230px; }
-  .discos td {
-    border: 1px solid;
-    text-align: center;
-    color: black;
-    padding: 10px;
-    font-size: 0.9rem;
-    background-color: #424874; }
-  .discos .cabeceraDiscos {
-    border-bottom: 4px solid black;
-    text-align: center; }
-  .discos .cancionesDiscos {
-    display: none; }
-    .discos .cancionesDiscos ol li {
-      margin: 0 0 0 25px;
-      text-align: left;
-      color: black;
-      letter-spacing: 1px;
-      font-size: 1rem; }
-    .discos .cancionesDiscos ol p {
-      text-decoration: underline;
-      margin: 2px 0 5px 16px;
-      text-align: left;
-      color: black;
-      letter-spacing: 1px; }
-  .discos .buttonDiscos:hover .cancionesDiscos {
-    background-color: #424874;
-    border: 3px solid black;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    padding: 10px;
-    z-index: 2; }
-  .discos .buttonDiscos {
-    display: inline-block;
-    border-radius: 4px;
-    background-color: #424874;
-    border: none;
-    color: black;
-    text-align: center;
-    font-size: 1.1rem;
-    padding: 8px;
-    width: 100px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 5px; }
-    .discos .buttonDiscos span {
-      display: inline-block;
-      position: relative;
-      transition: 0.5s; }
-    .discos .buttonDiscos p {
-      color: black;
-      display: inline-block; }
-    .discos .buttonDiscos span:after {
-      content: '\25bc';
-      position: absolute;
-      opacity: 0;
-      top: 0;
-      right: -10px;
-      transition: 0.2s; }
-  .discos .buttonDiscos:hover .buttonSpan p {
-    transition: 1s;
-    display: none; }
-  .discos .buttonDiscos:hover span {
-    padding-right: 20px; }
-  .discos .buttonDiscos:hover span:after {
-    opacity: 1;
-    right: 0; }
-  .discos .buttonDiscosSolista:hover .cancionesDiscos {
-    background-color: #424874;
-    border: 3px solid black;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    padding: 10px;
-    z-index: 2; }
-  .discos .buttonDiscosSolista {
-    display: inline-block;
-    border-radius: 4px;
-    background-color: #424874;
-    border: none;
-    color: black;
-    text-align: center;
-    font-size: 0.75rem;
-    transition: all 0.5s;
-    padding: 8px;
-    width: 100px;
-    cursor: pointer;
-    margin: 5px; }
-  .discos .buttonDiscosSolista span {
-    display: inline-block;
-    position: relative; }
-  .discos .buttonSpan p {
-    color: black;
-    display: inline-block; }
-  .discos .buttonDiscosSolista:hover .buttonSpan p {
-    transition: 1s;
-    display: none; }
-  .discos .buttonDiscosSolista span:after {
-    content: '\25bc';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -10px;
-    transition: 0.2s; }
-  .discos .buttonDiscosSolista:hover span {
-    padding-right: 20px; }
-  .discos .buttonDiscosSolista:hover span:after {
-    opacity: 1;
-    right: 0; }
-  .discos .sinfoniasButton {
-    margin-left: -12px; }
+
+.discografia {
+  padding: 60px 15px;
+  background: #0e2b44;
+  color: #fff;
+  font-size: 15px;
+  border-bottom: 1px solid black;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 10px;
+  padding-bottom: 50px;
+}
+
+.solista {
+  display: grid;
+  grid-column: span 2;
+}
+
+.discografias__titulo {
+  font-size: 1.4rem;
+  margin-bottom: 55px;
+  text-decoration: underline;
+  color: #148df5;
+
+}
+
+.accordeon input {
+  display: none;
+}
+
+.accordeon__titulo {
+  display: block;
+  width: 80vw;
+  padding: 15px;
+  margin-left: 0.2%;
+  background: #033a69;
+  cursor: pointer;
+  color: #fff;
+  font-size: 20px;
+  border-bottom: 3px solid black;
+  border-right: 3px solid black;
+}
+
+.accordeon__content {
+  height: 0;
+  overflow: hidden;
+  background: #052947;
+  margin: 0;
+}
+
+.accordeon__content ol {
+  padding: 10px 0 10px 45px;
+  text-decoration: none;
+}
+
+.accordeon input:checked~.accordeon__content {
+  height: auto;
+  margin: 15px 0;
+  transition: all .5s ease-out;
+}
+
+.discografia__suigeneris__discos{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+
+.discografia__porsuigieco__discos{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+
+.discografia__lamaquinadehacerpajaros__discos{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+
+.discografia__serugiran__discos{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+
+.discografia__solista__discos{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+
+.discografia__aznar__discos{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+
+.discografia__mercedes__discos{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+
+.discografia__pettinato__discos{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+
 
 /*********** NOVEDADES *************/
 .novedades {
@@ -390,79 +319,17 @@ body {
     .novedades .novedades--noticia .novedades__noticia--titulo {
       text-align: center;
       font-size: 1.2rem;
-      color: #b080ffc9;
-      font-family: 'Fondamento', cursive; }
+      color: #b080ffc9; }
 
 /***** CONTACTO******/
-/*.formas {
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Charly_Garc%C3%ADa_presenta_Clics_modernos.jpg/440px-Charly_Garc%C3%ADa_presenta_Clics_modernos.jpg);
-  width: 550px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  text-align: center;
-  color: #e4f9ff;
-  font-weight: bolder;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  border-radius: 5px;
-}
 
-.formas:hover {
-  background-image: none;
-  background-color: #313d52;
-  transition: 3s;
-}
-
-/* button */
-/*.btn-5 {
-  width: 130px;
-  height: 40px;
-  line-height: 42px;
-  padding: 0;
-  border: none;
-  background: rgb(255,27,0);
-background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
-}
-.btn-5:hover {
-  color: #f0094a;
-  background: transparent;
-   box-shadow:none;
-}
-.btn-5:before,
-.btn-5:after{
-  content:'';
-  position:absolute;
-  top:0;
-  right:0;
-  height:2px;
-  width:0;
-  background: #f0094a;
-  box-shadow:
-   -1px -1px 5px 0px #fff,
-   7px 7px 20px 0px #0003,
-   4px 4px 5px 0px #0002;
-  transition:400ms ease all;
-}
-.btn-5:after{
-  right:inherit;
-  top:inherit;
-  left:0;
-  bottom:0;
-}
-.btn-5:hover:before,
-.btn-5:hover:after{
-  width:100%;
-  transition:800ms ease all;
-}
-
-*/
 .formulario {
   border: 2px solid black;
   margin-left: 20%;
   margin-right: 20%;
-  margin-top: 30px; }
+  margin-top: 30px;
+  color: #fff;
+}
 
 .formulario__mail {
   margin-top: 10px;
@@ -674,13 +541,16 @@ background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
   margin-left: -55px;
   z-index: 2; }
 
-/**********MOBILE FIRST************/
-@media only screen and (min-width: 768px) {
+/**********Medias************/
+@media only screen and (min-width: 769px) {
+  .titulo{
+    padding-top: 150px;
+  }
   .header li{
   float: left;
   }
   .header li a{
-  padding: 20px 30px;
+  padding: 22px 30px;
   }
   .header .menu{
     clear:none;
@@ -690,59 +560,37 @@ background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
   .header .menu-icon{
     display: none;
   }
+  .header ul a{
+    border-bottom: 0px;
+    border-right: 1px solid black;
+  }
+
+  .responsive-iframe{
+    width: 50%;
+    height: 50%;
+    margin: auto;
+  }
 }
 @media only screen and (max-width: 768px) {
-  .navegador {
-    display: flex;
-    width: 65vh; }
-  .menu {
-    display: grid;
-    grid-template-columns: 1fr 1fr; }
-  .submenu {
-    position: absolute;
-    background-color: #ffff;
-    width: 120%;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 1s; }
-  .fotoIndex {
-    border-radius: 200px;
+}
+
+@media only screen and (min-width: 1024px) {
+    body .fotoIndex {
+    border-radius: 300px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 300px;
-    height: 300px;
-    margin-top: 20px; }
-  .submenu li a {
-    display: block;
-    padding: 15px;
-    width: 100%;
-    color: #01a9b4;
-    font-family: 'Poppins', sans-serif;
-    text-decoration: none; }
-  .menu li:hover .submenu {
-    visibility: visible;
-    opacity: 1;
-    z-index: 5;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black; }
-  .indexInfo {
-    margin: 80px 10% 50px;
-    display: grid;
-    grid-template-areas: "sobreCharly" "distinciones" "generos";
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr; } }
+    width: 600px;
+    height: 600px;
+    margin-top: 50px; }
 
-@media only screen and (max-width: 1024px) {
-  .indexInfo {
-    margin: 80px 10% 50px;
-    display: grid;
-    grid-template-areas: "sobreCharly" "distinciones" "generos";
-    grid-template-columns: 1fr;
-    grid-template-rows: 180px 180px 180px; } }
+    .informacion{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 150px;
+      margin-top: 100px;
+    }
 
-@media only screen and (min-width: 1024px) {
   .formulario {
     border: 2px solid black;
     margin-left: 20%;
@@ -869,15 +717,151 @@ background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
     margin-top: 80px; }
   .galeria__fila3__imagen3:hover {
     transform: scale(1.1, 1.1);
-    z-index: 2; } }
+    z-index: 2; }
+
+    /**********Discografía*************/
+
+    /**********Discografía*************/
+
+    .discografia {
+      margin: auto;
+      padding: 15px;
+      background: #0e2b44;
+      color: #fff;
+      font-size: 15px;
+      border-bottom: 1px solid black;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows:;
+      grid-column-gap: 10px;
+      padding-bottom: 500px;
+    }
+
+
+    .accordeon__item__filler {
+      grid-column: span 2;
+      border-top: 1px solid black;
+    }
+
+    .solista {
+      display: grid;
+      grid-column: span 2;
+    }
+
+    .discografias__titulo {
+      font-size: 1.4rem;
+      text-decoration: underline;
+      grid-column: span 2;
+      color: #148df5;
+
+    }
+
+    .accordeon input {
+      display: none;
+    }
+
+    .accordeon__titulo {
+      display: block;
+      width: auto;
+      padding: 15px;
+      background: #033a69;
+      cursor: pointer;
+      color: #fff;
+      font-size: 20px;
+      border-bottom: 3px solid black;
+      border-right: 3px solid black;
+    }
+
+    .accordeon__titulo:hover {
+      background: #3c2b6c;
+      transition: all .5s;
+      text-decoration: underline;
+    }
+
+    .accordeon__content {
+      height: 0;
+      overflow: hidden;
+      background: #052947;
+      margin: 0;
+    }
+
+    .accordeon__content ol {
+      padding: 10px 0 10px 45px;
+      text-decoration: none;
+    }
+
+    .accordeon input:checked~.accordeon__content {
+      height: auto;
+      margin: 15px 0;
+      transition: all .5s ease-out;
+    }
+
+    .discografia__suigeneris__discos{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 80px;
+      grid-gap: 5px;
+      padding-bottom: 50px;
+    }
+
+    .discografia__porsuigieco__discos{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 80px;
+      grid-gap: 5px;
+      padding-bottom: 50px;
+    }
+
+    .discografia__lamaquinadehacerpajaros__discos{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 80px;
+      grid-gap: 5px;
+      padding-bottom: 50px;
+    }
+
+    .discografia__serugiran__discos{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 80px;
+      grid-gap: 5px;
+      padding-bottom: 50px;
+    }
+
+    .discografia__solista__discos{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 80px;
+      grid-gap: 5px;
+      padding-bottom: 50px;
+    }
+
+    .discografia__aznar__discos{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 80px;
+      grid-gap: 5px;
+      padding-bottom: 50px;
+    }
+
+    .discografia__mercedes__discos{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 80px;
+      grid-gap: 5px;
+      padding-bottom: 50px;
+    }
+
+    .discografia__pettinato__discos{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 80px;
+      grid-gap: 5px;
+      margin-bottom: -350px;
+    }
+  }
 
 @media only screen and (min-width: 1440px) {
-  .indexInfo {
-    margin: 80px 10% 50px;
-    display: grid;
-    grid-template-areas: "sobreCharly distinciones generos";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 200px; }
   .formulario__comentarios__textarea {
     width: 600px; }
   .galeria__carousel {
@@ -974,15 +958,11 @@ background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
     z-index: 2; } }
 
 @media only screen and (max-width: 550px) {
-  .indexInfo {
-    display: flex;
-    flex-direction: column; }
-  .formulario__nombre__input {
-    width: 235px;
-    margin-left: 40px; }
-  iframe {
-    width: 80vw; } }
+      .formulario__nombre__input {
+        width: 235px;
+        margin-left: 40px; }
+       }
 
 @media only screen and (max-width: 610px) {
-  .seruDisco {
-    height: 750px; } }
+      .seruDisco {
+        height: 750px; } }
