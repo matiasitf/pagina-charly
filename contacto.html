@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,13 +7,10 @@
   <meta name="keywords" content="contactarse contacto comunicación comunicar canción canciones música rock charly garcía Carlos Garcia músico artista bohemio pianista piano música_argentina rock_argentino rock_progresivo progresivo
   discos discografia seru serugiran maquina de hacer pajaros maquinadehacerpajaros suigeneris sui generis leon gieco porSuiGieco Aznar Pedroaznar Mercedes Sosa
   mercedessosa Roberto Pettinato Robertopettinato Cerati gustavocerati Spinetta luisalbertospinetta">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/prueba.css">
-  <script src="js/bootstrap.js"></script>
   <title>Charly Garcia- Contacto</title>
 </head>
-
 <body>
   <header class="header">
     <a href="index.html" class="logo">Charly García</a>
@@ -29,60 +25,126 @@
       <li><a href="contacto.html">Contacto</a></li>
     </ul>
   </header>
-<h1 class="titulo">Contacto</h1>
-  <form class="formulario">
-    <div class="formulario__mail form-group row">
-      <label for="inputEmail3" class="col-sm-1 col-form-label">Email</label>
-      <div class="col-sm-8 col-lg-10">
-        <input type="email" class="formulario__mail__input form-control" id="inputEmail3" placeholder="Email">
-      </div>
-    </div>
-    <div class="formulario__nombre form-group">
-  <label class="formulario__nombre__label" for="inputsm" >Nombre</label>
-  <input class="formulario__nombre__input form-control input-sm" id="inputsm" placeholder="Nombre" type="text">
-</div>
-    </div>
-    <fieldset class="form-group">
+  <h1 class="titulo">Contacto</h1>
+  <h4 class="forma__titulo">Queremos saber más sobre vos.</h4>
+  <div class="forma__contacto">
+    <form action="/action_page.php">
       <div class="row">
-        <legend class="formulario__legend__sexo col-form-label col-sm-1 pt-0">Sexo:</legend>
-        <div class="formulario__radios col-sm-5">
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-            <label class="form-check-label" for="gridRadios1">
-              Hombre
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-            <label class="form-check-label" for="gridRadios2">
-              Mujer
-            </label>
-          </div>
+        <div class="col-25">
+          <label for="nombre">Nombre</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
         </div>
       </div>
-      <div class="form-group">
-    <label class="formulario__comentarios__label" for="exampleFormControlTextarea1">Dejanos unas palabras:</label>
-    <textarea class="formulario__comentarios__textarea form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      <div class="row">
+        <div class="col-25">
+          <label for="apellido">Apellido</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="apellido" name="apellido" placeholder="Tu apellido">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="sexo">Sexo</label>
+        </div>
+        <div class="col-75">
+          <select id="sexo" name="sexo">
+            <option value="hombre">Hombre</option>
+            <option value="mujer">Mujer</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="email">Ingresa tu email</label>
+        </div>
+        <div class="col-75">
+        <input type="email" id="email" name="email">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="comentarios">comentarios</label>
+        </div>
+        <div class="col-75">
+          <textarea id="comentarios" name="comentarios" placeholder="Dejanos unas palabras..." style="height:200px"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="newsletter">Recibí noticias todas las semanas</label>
+        </div>
+        <div class="col-75">
+          <input type="checkbox" name="newsletter" id="newsletter" value="">
+        </div>
+      </div>
+      <div class="row">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
   </div>
-    </fieldset>
-    <div class="formulario_newsletercheck form-group row">
-      <div class="newsletter col-sm-2">Recibir Newsletter</div>
-      <div class="col-sm-10">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck1">
-          <label class="form-check-label" for="gridCheck1">
-          </label>
+  <h4 class="forma__titulo">¿Te gustaría trabajar con nosotros?</h4>
+  <div class="forma__contacto">
+    <form action="/action_page.php">
+      <div class="row">
+        <div class="col-25">
+          <label for="nombre">Nombre</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
         </div>
       </div>
-    </div>
-    <div class="form-group row">
-      <div class="col-sm-10">
-        <button type="submit" class="formulario__button__enviar btn btn-primary">Enviar</button>
+      <div class="row">
+        <div class="col-25">
+          <label for="apellido">Apellido</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="apellido" name="apellido" placeholder="Tu apellido">
+        </div>
       </div>
-    </div>
-  </form>
-  <hr class="corte">
-  <div class="foot">
+      <div class="row">
+        <div class="col-25">
+          <label for="sexo">Sexo</label>
+        </div>
+        <div class="col-75">
+          <select id="sexo" name="sexo">
+            <option value="hombre">Hombre</option>
+            <option value="mujer">Mujer</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="email">Ingresa tu email</label>
+        </div>
+        <div class="col-75">
+        <input type="email" id="email" name="email">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="comentarios">comentarios</label>
+        </div>
+        <div class="col-75">
+          <textarea id="comentarios" name="comentarios" placeholder="Dejanos unas palabras..." style="height:200px"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="myfile">Cargá tu CV</label>
+        </div>
+        <div class="col-75">
+          <input type="file" id="myfile" name="myfile" multiple>
+        </div>
+      </div>
+      <div class="row">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </div>
+  <div class="pie">
     <footer>
       <a href="#top">Volver arriba.</a>
     </footer>
