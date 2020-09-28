@@ -185,16 +185,6 @@ body {
   text-decoration: none;
 }
 
-/**************BIOGRAFIA****************/
-.fotoBio {
-  display: none;
-  width: 600px;
-  height: 400px;
-  float: right; }
-
-.porSuiGieco {
-  padding-bottom: 70px; }
-
 /*********** Discografía *********************/
 
 .discografia {
