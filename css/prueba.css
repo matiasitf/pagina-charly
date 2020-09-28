@@ -444,6 +444,11 @@ body {
 .bio__titulo{
   margin: 30px 0;
 }
+.bio__subtitulo{
+  text-align: center;
+  color: rgb(49, 161, 218);
+  font-size: 1.2rem;
+}
 
 .introBio {
   margin: 0 10%;
@@ -452,6 +457,36 @@ body {
 }
 
 .infancia {
+  margin: 0 10%;
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+
+.bioSuiGeneris {
+  margin: 0 10%;
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+
+.bioPorSuiGieco {
+  margin: 0 10%;
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+
+.bioMaquina{
+  margin: 0 10%;
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+
+.bioSeru{
+  margin: 0 10%;
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+
+.bioSolista{
   margin: 0 10%;
   margin-top: 50px;
   margin-bottom: 70px;
@@ -466,12 +501,6 @@ body {
   display: block;
 }
 
-.bioSuiGeneris {
-  margin: 0 10%;
-  margin-top: 50px;
-  margin-bottom: 70px;
-}
-
 .bioSuiGeneris__foto img{
   width: 250px;
   height: 140px;
@@ -479,12 +508,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   display: block;
-}
-
-.bioPorSuiGieco {
-  margin: 0 10%;
-  margin-top: 50px;
-  margin-bottom: 70px;
 }
 
 .bioPorSuiGieco__foto img{
@@ -496,13 +519,6 @@ body {
   display: block;
 }
 
-
-.bioMaquina{
-  margin: 0 10%;
-  margin-top: 50px;
-  margin-bottom: 70px;
-}
-
 .bioMaquina__foto img{
   width: 250px;
   height: 140px;
@@ -510,12 +526,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   display: block;
-}
-
-.bioSeru{
-  margin: 0 10%;
-  margin-top: 50px;
-  margin-bottom: 70px;
 }
 
 .bioSeru__foto img{
@@ -527,12 +537,6 @@ body {
   display: block;
 }
 
-.bioSolista{
-  margin: 0 10%;
-  margin-top: 50px;
-  margin-bottom: 70px;
-}
-
 .bioSolista__foto img{
   width: 250px;
   height: 120px;
@@ -540,6 +544,8 @@ body {
   margin-left: auto;
   margin-right: auto;
   display: block
+}
+
 /*****************Galeria*************************/
 
   .galeria{
@@ -716,6 +722,62 @@ body {
 /**********Medias************/
 
 @media only screen and (min-width: 768px){
+
+/****************bio**********************/
+.infancia__foto img{
+  width: 370px;
+  height: 200px;
+  border: 2px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.bioSuiGeneris__foto img{
+  width: 370px;
+  height: 200px;
+  border: 2px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.bioPorSuiGieco__foto img{
+  width: 370px;
+  height: 200px;
+  border: 2px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.bioMaquina__foto img{
+  width: 370px;
+  height: 200px;
+  border: 2px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.bioSeru__foto img{
+  width: 370px;
+  height: 190px;
+  border: 2px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.bioSolista__foto img{
+  width: 370px;
+  height: 200px;
+  border: 2px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  display: block
+}
+
 /******************fila1*********************/
   .galeria__fila1{
     display: flex;
@@ -749,11 +811,12 @@ body {
   .galeria__fila3 div{
     margin: 10px;
   }
-
+/*************novedades***********************/
   .novedades{
   justify-content: space-around;
   }
 }
+
 @media only screen and (min-width: 769px) {
   .titulo{
     padding-top: 150px;
@@ -796,6 +859,61 @@ body {
     height: 600px;
     margin-top: 50px; }
 
+/****************bio**********************/
+    .infancia__foto img{
+      width: 500px;
+      height: 270px;
+      border: 2px solid black;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+    .bioSuiGeneris__foto img{
+      width: 500px;
+      height: 270px;
+      border: 2px solid black;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+    .bioPorSuiGieco__foto img{
+      width: 500px;
+      height: 270px;
+      border: 2px solid black;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+    .bioMaquina__foto img{
+      width: 500px;
+      height: 270px;
+      border: 2px solid black;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+    .bioSeru__foto img{
+      width: 500px;
+      height: 270px;
+      border: 2px solid black;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+    .bioSolista__foto img{
+      width: 500px;
+      height: 250px;
+      border: 2px solid black;
+      margin-left: auto;
+      margin-right: auto;
+      display: block
+    }
+/*********** novedades**************************/
     .novedades{
       display: flex;
       flex-direction: column;
